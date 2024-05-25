@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1b2373c947120210749deb02d16d43d7" label="My Assets" max_length="40" name="x_214689_portfolio_my_assets" type="collection">
+        <element label="Coin" mandatory="true" max_length="40" name="coin" type="string"/>
+        <element label="High 24h" max_length="20" name="high_24h" type="price"/>
+        <element label="Icon" max_length="40" name="icon" read_only="true" type="icon"/>
+        <element label="Low 24h" max_length="20" name="low_24h" type="price"/>
+        <element label="Market Cap" max_length="20" name="market_cap" read_only="true" type="price"/>
+        <element label="Marke cap rank" max_length="40" name="marke_cap_rank" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Price" max_length="20" name="price" read_only="true" type="price"/>
+        <element label="Price change 24h" max_length="20" name="price_change_24h" type="price"/>
+        <element label="Price change % 24h " max_length="20" name="price_change_percentage_24h" type="decimal"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="Total volume" max_length="20" name="total_volume" type="decimal"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
